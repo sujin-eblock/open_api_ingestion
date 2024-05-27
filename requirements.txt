@@ -1,0 +1,10 @@
+--constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.8.1/constraints-3.11.txt"
+
+apache-airflow-providers-snowflake==5.2.1
+apache-airflow-providers-mysql==5.5.1
+dlt==0.4.11
+hubspot-api-client==9.0.0
+dlt[duckdb]
+dlt[cli]
+duckdb~=0.10.3
+streamlit
