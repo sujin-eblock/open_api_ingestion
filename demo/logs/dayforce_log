@@ -1,0 +1,239 @@
+7f27e8bfc51c
+*** Found local files:
+***   * /usr/local/airflow/logs/dag_id=dayforce_pipeline_dag/run_id=manual__2024-05-27T11:02:03.702522+00:00/task_id=pipeline_name.dayforce_employees/attempt=1.log
+[2024-05-27T11:02:06.110+0000] {{taskinstance.py:1956}} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dayforce_pipeline_dag.pipeline_name.dayforce_employees manual__2024-05-27T11:02:03.702522+00:00 [queued]>
+[2024-05-27T11:02:06.113+0000] {{taskinstance.py:1956}} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dayforce_pipeline_dag.pipeline_name.dayforce_employees manual__2024-05-27T11:02:03.702522+00:00 [queued]>
+[2024-05-27T11:02:06.113+0000] {{taskinstance.py:2170}} INFO - Starting attempt 1 of 1
+[2024-05-27T11:02:06.121+0000] {{taskinstance.py:2191}} INFO - Executing <Task(PythonOperator): pipeline_name.dayforce_employees> on 2024-05-27 11:02:03.702522+00:00
+[2024-05-27T11:02:06.123+0000] {{standard_task_runner.py:60}} INFO - Started process 5899 to run task
+[2024-05-27T11:02:06.126+0000] {{standard_task_runner.py:87}} INFO - Running: ['***', 'tasks', 'run', 'dayforce_pipeline_dag', 'pipeline_name.dayforce_employees', 'manual__2024-05-27T11:02:03.702522+00:00', '--job-id', '11', '--raw', '--subdir', 'DAGS_FOLDER/dayforce_pipeline_dag.py', '--cfg-path', '/tmp/tmploh9yhyz']
+[2024-05-27T11:02:06.126+0000] {{standard_task_runner.py:88}} INFO - Job 11: Subtask pipeline_name.dayforce_employees
+[2024-05-27T11:02:06.162+0000] {{task_command.py:423}} INFO - Running <TaskInstance: dayforce_pipeline_dag.pipeline_name.dayforce_employees manual__2024-05-27T11:02:03.702522+00:00 [running]> on host 7f27e8bfc51c
+[2024-05-27T11:02:06.217+0000] {{taskinstance.py:2480}} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='test@test.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dayforce_pipeline_dag' AIRFLOW_CTX_TASK_ID='pipeline_name.dayforce_employees' AIRFLOW_CTX_EXECUTION_DATE='2024-05-27T11:02:03.702522+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-27T11:02:03.702522+00:00'
+[2024-05-27T11:02:06.227+0000] {{airflow_helper.py:270}} INFO - Set data_writer.buffer_max_items to 1000
+[2024-05-27T11:02:06.227+0000] {{airflow_helper.py:279}} INFO - Enabled log progress with period 30.0
+[2024-05-27T11:02:06.227+0000] {{airflow_helper.py:281}} INFO - Pipeline data in /tmp/dlt_c1e491eb86031f6a/pipelines/pipeline_name
+[2024-05-27T11:02:06.227+0000] {{airflow_helper.py:305}} INFO - Running the pipeline, attempt=1
+[2024-05-27T11:02:08.556+0000] {{logging_mixin.py:188}} INFO - "00000003,00000005,00000007,00000009,00000010,00000013,00000017,00000021,00000023,00000025,00000030,00000034,00000036,00000037,00000039,00000041,00000042,00000045,00000047,00000048,00000050,00000054,00000056,00000059,00000064,00000068,00000070,00000071,00000073,00000076,00000078,00000085,00000087,00000091,00000092,00000096,000001000,000001002,000001004,000001005,000001007,000001008,000001009,000001010,000001012,000001014,000001016,000001017,000001018,000001019,000001020,000001021,000001022,000001023,000001024,000001025,000001031,000001033,000001035,000001036,000001037,000001038,000001039,000001040,000001041,000001042,000001043,000001044,000001045,000001046,000001047,000001048,000001049,000001050,000001051,000001052,000001053,000001054,000001055,000001056,000001057,000001058,000001060,000001061,000001062,000001063,000001064,000001066,000001067,000001068,000001069,000001070,000001071,000001073,000001074,000001075,000001076,000001079,00000108,000001080,000001081,000001082,000001083,000001084,000001085,000001086,000001087,000001088,000001089,000001090,000001091,000001092,000001093,000001095,000001096,000001097,000001098,000001099,000001100,000001101,000001102,000001103,000001104,000001107,000001108,000001110,000001111,000001112,000001113,000001114,000001115,000001116,000001117,000001118,000001119,00000112,000001121,000001122,000001124,000001125,000001126,000001127,000001129,000001130,000001131,000001132,000001133,000001134,000001136,000001137,000001138,000001140,000001142,000001143,000001144,000001145,000001146,000001147,000001148,000001156,000001158,000001159,000001160,000001161,000001162,000001163,000001165,000001167,000001168,00000117,000001170,000001172,000001174,000001175,000001178,000001179,000001180,000001181,000001182,000001183,000001184,000001185,000001186,000001187,000001188,000001190,000001191,000001194,000001195,000001196,000001197,000001198,000001199,000001200,000001201,000001203,000001205,000001206,000001209,000001211,000001212,000001213,000001214,000001215,000001217,000001218,000001219,00000122,000001220,000001221,000001222,000001223,000001225,000001226,000001227,000001229,000001230,000001231,000001232,000001233,000001234,000001235,000001236,000001237,000001238,000001242,000001243,000001244,000001245,000001247,000001248,000001249,000001250,000001251,000001253,000001254,000001256,000001257,000001258,000001259,00000126,000001260,000001263,000001264,000001266,000001267,000001269,00000127,000001270,000001271,000001272,000001274,000001275,000001277,000001278,000001279,000001280,000001281,000001282,000001283,000001286,000001287,000001288,000001289,00000129,000001290,000001293,000001295,000001297,000001298,000001299,000001300,000001301,000001303,000001304,000001305,000001306,00000131,000001311,000001313,000001314,000001316,000001317,000001318,000001321,000001323,000001324,000001330,000001333,000001339,00000134,000001342,000001345,000001348,000001349,000001352,000001353,000001355,000001357,00000136,000001360,000001362,000001363,000001365,000001366,000001367,000001369,000001371,000001373,000001375,000001378,000001380,000001381,000001385,000001386,000001387,000001389,000001393,000001395,000001396,000001397,000001398,000001402,000001406,000001408,000001409,000001410,000001411,000001417,000001418,000001419,00000142,000001420,000001429,000001430,000001433,000001435,000001437,000001438,000001439,000001443,000001445,000001446,000001448,00000145,000001450,000001452,000001453,000001455,000001456,00000146,000001460,000001467,000001468,000001469,00000147,000001470,000001471,000001477,000001478,000001479,00000148,000001480,000001481,000001482,000001483,000001484,000001486,000001488,00000149,000001491,000001493,000001494,000001496,000001497,000001498,000001499,000001505,000001506,000001510,000001514,000001516,000001523,000001525,000001526,000001533,000001535,000001537,000001538,000001539,000001542,000001546,000001547,000001548,00000155,000001551,000001553,000001554,000001556,000001558,00000156,000001562,000001563,000001564,000001567,000001568,000001569,000001574,000001577,000001578,000001586,00000159,000001592,000001598,00000160,000001601,000001605,000001607,000001614,000001615,000001616,000001619,00000162,000001621,000001623,000001624,000001625,000001626,000001628,000001629,00000163,000001630,000001631,000001632,000001633,000001636,000001638,000001639,000001640,000001641,000001642,000001643,000001644,000001645,000001646,000001647,000001648,000001649,000001650,000001651,000001652,000001653,000001654,000001655,000001656,000001657,000001659,00000166,000001661,000001662,000001663,000001665,000001666,000001668,000001669,000001670,000001671,000001672,000001674,00000168,000001684,000001686,000001689,000001692,000001695,000001696,000001697,000001700,000001701,000001702,000001704,000001705,000001706,000001708,00000171,000001712,000001713,000001716,000001718,00000172,000001720,000001723,000001726,000001727,000001731,000001734,000001736,00000174,000001744,000001745,000001748,000001752,000001753,000001754,000001757,000001761,000001762,000001763,000001764,000001768,000001769,00000177,000001772,000001773,000001774,000001778,000001779,000001780,000001782,000001783,000001785,000001786,000001787,000001789,000001790,000001793,000001794,000001799,00000180,000001802,000001804,000001806,000001809,00000181,000001812,000001813,000001815,000001816,000001819,000001820,000001822,000001824,000001825,000001826,000001829,000001832,000001834,000001835,000001838,000001839,00000184,000001840,000001841,000001848,000001849,00000185,000001853,000001854,000001855,000001856,00000186,000001864,000001865,000001866,000001868,000001872,000001873,000001876,000001877,00000188,000001882,000001886,000001887,000001888,000001892,000001896,00000190,000001900,000001903,000001905,000001906,000001908,000001916,00000192,000001921,00000193,000001931,000001933,00000194,000001947,000001962,000001970,000001973,000001975,000001976,000001977,000001979,000001980,000001984,000001988,00000199,000001991,000001993,000001996,000001998,000001999,000002000,000002002,000002005,000002006,000002018,00000202,000002020,000002023,000002027,000002029,000002034,00000204,000002042,00000205,00000206,000002066,000002069,00000207,000002080,000002082,000002084,000002086,000002090,000002101,000002103,000002105,000002110,000002113,000002114,00000213,00000214,00000215,00000218,00000221,00000224,00000225,00000226,00000228,00000230,00000234,00000235,00000236,00000237,00000238,00000239,00000240,00000242,00000244,00000245,00000247,00000249,00000250,00000251,00000252,00000253,00000256,00000258,00000259,00000260,00000261,00000263,00000264,00000266,00000269,00000270,00000271,00000275,00000276,00000278,00000279,00000280,00000283,00000284,00000285,00000286,00000287,00000288,00000289,00000291,00000292,00000294,00000296,00000297,00000298,00000300,00000301,00000305,00000306,00000307,00000308,00000309,00000310,00000312,00000313,00000315,00000316,00000317,00000318,00000319,00000323,00000324,00000326,00000327,00000329,00000330,00000331,00000334,00000335,00000336,00000337,00000338,00000339,00000340,00000341,00000342,00000343,00000344,00000345,00000347,00000348,00000350,00000351,00000352,00000353,00000354,00000355,00000356,00000358,00000359,00000360,00000362,00000363,00000364,00000365,00000368,00000369,00000370,00000371,00000372,00000373,00000374,00000375,00000376,00000377,00000378,00000379,00000380,00000381,00000382,00000383,00000386,00000387,00000388,00000389,00000390,00000391,00000392,00000393,00000394,00000395,00000396,00000399,00000400,00000401,00000402,00000403,00000404,00000405,00000406,00000407,00000408,00000409,00000411,00000412,00000413,00000416,00000417,00000419,00000420,00000421,00000422,00000423,00000424,00000425,00000426,00000427,00000429,00000431,00000435,00000436,00000437,00000440,00000443,00000446,00000447,00000448,00000450,00000452,00000453,00000454,00000455,00000456,00000457,00000459,00000460,00000464,00000465,00000466,00000467,00000471,00000472,00000474,00000475,00000476,00000477,00000478,00000481,00000483,00000485,00000486,00000487,00000488,00000489,00000490,00000492,00000493,00000494,00000495,00000496,00000497,00000498,00000499,00000500,00000501,00000502,00000503,00000504,00000507,00000508,00000509,00000511,00000512,00000514,00000515,00000520,00000522,00000524,00000525,00000527,00000528,00000529,00000532,00000533,00000536,00000538,00000539,00000540,00000541,00000542,00000545,00000549,00000550,00000552,00000553,00000555,00000557,00000558,00000560,00000561,00000562,00000564,00000567,00000568,00000570,00000572,00000573,00000575,00000576,00000577,00000579,00000581,00000582,00000586,00000587,00000588,00000589,00000590,00000595,00000596,00000597,00000598,00000601,00000602,00000604,00000605,00000606,00000608,00000609,00000610,00000611,00000612,00000613,00000614,00000616,00000619,00000620,00000622,00000623,00000625,00000627,00000628,00000630,00000638,00000641,00000643,00000646,00000647,00000649,00000650,00000651,00000653,00000655,00000656,00000658,00000659,00000660,00000662,00000663,00000664,00000665,00000667,00000668,00000669,00000672,00000673,00000674,00000676,00000677,00000678,00000679,00000680,00000682,00000683,00000685,00000686,00000689,00000690,00000691,00000692,00000693,00000694,00000697,00000701,00000702,00000703,00000704,00000708,00000711,00000712,00000714,00000715,00000716,00000717,00000718,00000719,00000720,00000721,00000723,00000724,00000725,00000726,00000727,00000728,00000729,00000731,00000732,00000733,00000734,00000735,00000736,00000737,00000738,00000739,00000740,00000741,00000742,00000744,00000746,00000748,00000749,00000750,00000751,00000752,00000753,00000754,00000755,00000756,00000758,00000759,00000760,00000763,00000764,00000766,00000767,00000768,00000769,00000770,00000771,00000774,00000776,00000777,00000778,00000779,00000780,00000781,00000782,00000783,00000784,00000785,00000786,00000787,00000788,00000789,00000790,00000791,00000792,00000795,00000796,00000797,00000798,00000799,00000802,00000803,00000804,00000805,00000806,00000807,00000808,00000809,00000810,00000811,00000812,00000814,00000815,00000816,00000817,00000818,00000819,00000820,00000821,00000822,00000823,00000824,00000825,00000826,00000827,00000828,00000829,00000830,00000831,00000832,00000833,00000834,00000835,00000837,00000838,00000840,00000841,00000842,00000843,00000844,00000845,00000846,00000847,00000849,00000850,00000851,00000852,00000853,00000854,00000855,00000856,00000857,00000858,00000859,00000860,00000861,00000862,00000863,00000864,00000865,00000866,00000867,00000868,00000869,00000870,00000871,00000872,00000873,00000874,00000875,00000876,00000877,00000878,00000879,00000880,00000881,00000882,00000883,00000884,00000885,00000886,00000887,00000888,00000889,00000890,00000891,00000892,00000893,00000894,00000895,00000896,00000897,00000898,00000899,00000900,00000901,00000902,00000903,00000904,00000905,00000906,00000907,00000908,00000909,00000910,00000911,00000912,00000913,00000914,00000915,00000917,00000920,00000922,00000925,00000928,00000932,00000936,00000937,00000938,00000939,00000941,00000944,00000945,00000946,00000951,00000952,00000953,00000954,00000956,00000957,00000958,00000959,00000960,00000961,00000962,00000963,00000964,00000965,00000966,00000967,00000968,00000969,00000970,00000971,00000972,00000973,00000974,00000975,00000976,00000977,00000978,00000979,00000980,00000981,00000982,00000983,00000984,00000985,00000986,00000987,00000988,00000989,00000990,00000991,00000992,00000993,00000994,00000996,00000998"
+[2024-05-27T11:02:09.443+0000] {{logging_mixin.py:188}} INFO - Employee Export Background Job queued successfully
+[2024-05-27T11:02:09.650+0000] {{logging_mixin.py:188}} INFO - Received
+[2024-05-27T11:02:19.860+0000] {{logging_mixin.py:188}} INFO - Received
+[2024-05-27T11:02:30.056+0000] {{logging_mixin.py:188}} INFO - Received
+[2024-05-27T11:02:40.245+0000] {{logging_mixin.py:188}} INFO - Running
+[2024-05-27T11:02:50.475+0000] {{logging_mixin.py:188}} INFO - Running
+[2024-05-27T11:03:00.654+0000] {{logging_mixin.py:188}} INFO - Succeeded
+[2024-05-27T11:03:03.049+0000] {{logging_mixin.py:188}} INFO - 1000
+[2024-05-27T11:03:04.299+0000] {{logging_mixin.py:188}} INFO - 1204
+[2024-05-27T11:03:04.687+0000] {{collector.py:231}} INFO - ------------------------------- Extract dayforce -------------------------------
+Resources: 0/1 (0.0%) | Time: 57.49s | Rate: 0.00/s
+employees: 1204  | Time: 0.00s | Rate: 136484919.35/s
+Memory usage: 229.71 MB (15.90%) | CPU usage: 0.00%
+[2024-05-27T11:03:04.701+0000] {{collector.py:231}} INFO - ------------------------------- Extract dayforce -------------------------------
+Resources: 1/1 (100.0%) | Time: 57.51s | Rate: 0.02/s
+employees: 1204  | Time: 0.01s | Rate: 81246.25/s
+Memory usage: 229.71 MB (15.90%) | CPU usage: 0.00%
+[2024-05-27T11:03:04.742+0000] {{collector.py:231}} INFO - ------------------------------- Extract dayforce -------------------------------
+Resources: 1/1 (100.0%) | Time: 0.02s | Rate: 63.42/s
+_dlt_pipeline_state: 1  | Time: 0.01s | Rate: 71.80/s
+Memory usage: 183.30 MB (15.60%) | CPU usage: 0.00%
+[2024-05-27T11:03:04.924+0000] {{pool_runner.py:75}} INFO - Created none pool with 1 workers
+[2024-05-27T11:03:04.924+0000] {{normalize.py:432}} INFO - Running file normalizing
+[2024-05-27T11:03:04.924+0000] {{normalize.py:435}} INFO - Found 1 load packages
+[2024-05-27T11:03:04.929+0000] {{normalize.py:458}} INFO - Found 2 files in schema dayforce load_id 1716807727.0005622
+[2024-05-27T11:03:04.930+0000] {{normalize.py:409}} INFO - Created new load package 1716807727.0005622 on loading volume
+[2024-05-27T11:03:04.950+0000] {{normalize.py:157}} INFO - Created items normalizer JsonLItemsNormalizer with writer InsertValuesWriter for item format object and file format insert_values
+[2024-05-27T11:03:07.363+0000] {{normalize.py:230}} INFO - Processed all items in 2 files
+[2024-05-27T11:03:07.667+0000] {{normalize.py:236}} INFO - Updating schema for table _dlt_pipeline_state with 1 deltas
+[2024-05-27T11:03:07.667+0000] {{normalize.py:236}} INFO - Updating schema for table employees with 11 deltas
+[2024-05-27T11:03:07.668+0000] {{normalize.py:236}} INFO - Updating schema for table employees__employment_statuses__items with 7 deltas
+[2024-05-27T11:03:07.668+0000] {{normalize.py:236}} INFO - Updating schema for table employees__work_assignments__items with 12 deltas
+[2024-05-27T11:03:07.668+0000] {{normalize.py:236}} INFO - Updating schema for table employees__addresses__items with 3 deltas
+[2024-05-27T11:03:07.668+0000] {{normalize.py:236}} INFO - Updating schema for table employees__roles__items with 1 deltas
+[2024-05-27T11:03:07.668+0000] {{normalize.py:236}} INFO - Updating schema for table employees__compensation_summary__items with 4 deltas
+[2024-05-27T11:03:07.668+0000] {{normalize.py:236}} INFO - Updating schema for table employees__direct_deposits__items with 3 deltas
+[2024-05-27T11:03:07.668+0000] {{normalize.py:236}} INFO - Updating schema for table employees__ei_rates__items with 1 deltas
+[2024-05-27T11:03:07.668+0000] {{normalize.py:236}} INFO - Updating schema for table employees__org_unit_infos__items with 7 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__contacts__items with 3 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__can_federal_taxes__items with 4 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__can_state_taxes__items with 2 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__emergency_contacts__items with 2 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__emergency_contacts__items__contacts__items with 4 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__employee_properties__items with 2 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__employee_pay_adjust_code_groups__items with 1 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__marital_statuses__items with 1 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__emergency_contacts__items__addresses__items with 2 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__us_federal_taxes__items with 6 deltas
+[2024-05-27T11:03:07.669+0000] {{normalize.py:236}} INFO - Updating schema for table employees__us_state_taxes__items with 8 deltas
+[2024-05-27T11:03:07.670+0000] {{normalize.py:236}} INFO - Updating schema for table employees__health_wellness_details__items with 1 deltas
+[2024-05-27T11:03:07.670+0000] {{normalize.py:236}} INFO - Updating schema for table employees__employee_work_assignment_managers__items with 1 deltas
+[2024-05-27T11:03:07.670+0000] {{normalize.py:236}} INFO - Updating schema for table employees__clock_device_groups__items with 1 deltas
+[2024-05-27T11:03:07.670+0000] {{normalize.py:236}} INFO - Updating schema for table employees__employee_managers__items with 1 deltas
+[2024-05-27T11:03:07.670+0000] {{normalize.py:236}} INFO - Updating schema for table employees__us_tax_statuses__items with 1 deltas
+[2024-05-27T11:03:07.670+0000] {{normalize.py:236}} INFO - Updating schema for table employees__can_tax_statuses__items with 1 deltas
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table _dlt_pipeline_state has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__employment_statuses__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__work_assignments__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__addresses__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__roles__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__compensation_summary__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__direct_deposits__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__ei_rates__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__org_unit_infos__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__contacts__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__can_federal_taxes__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__can_state_taxes__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__emergency_contacts__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__emergency_contacts__items__contacts__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__employee_properties__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__employee_pay_adjust_code_groups__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__marital_statuses__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__emergency_contacts__items__addresses__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.671+0000] {{normalize.py:363}} INFO - Table employees__us_federal_taxes__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.672+0000] {{normalize.py:363}} INFO - Table employees__us_state_taxes__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.672+0000] {{normalize.py:363}} INFO - Table employees__health_wellness_details__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.672+0000] {{normalize.py:363}} INFO - Table employees__employee_work_assignment_managers__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.672+0000] {{normalize.py:363}} INFO - Table employees__clock_device_groups__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.672+0000] {{normalize.py:363}} INFO - Table employees__employee_managers__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.672+0000] {{normalize.py:363}} INFO - Table employees__us_tax_statuses__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.672+0000] {{normalize.py:363}} INFO - Table employees__can_tax_statuses__items has seen data for a first time with load id 1716807727.0005622
+[2024-05-27T11:03:07.674+0000] {{normalize.py:369}} INFO - Saving schema dayforce with version 1:2
+[2024-05-27T11:03:07.679+0000] {{normalize.py:385}} INFO - Committing storage, do not kill this process
+[2024-05-27T11:03:07.680+0000] {{normalize.py:391}} INFO - Extracted package 1716807727.0005622 processed
+[2024-05-27T11:03:07.680+0000] {{collector.py:231}} INFO - ------------------- Normalize dayforce in 1716807727.0005622 -------------------
+Files: 29/2 (1450.0%) | Time: 2.75s | Rate: 10.54/s
+Items: 24214  | Time: 2.75s | Rate: 8801.07/s
+Memory usage: 232.96 MB (15.90%) | CPU usage: 0.00%
+[2024-05-27T11:03:07.680+0000] {{pool_runner.py:101}} INFO - Closing processing pool
+[2024-05-27T11:03:07.680+0000] {{pool_runner.py:104}} INFO - Processing pool closed
+[2024-05-27T11:03:07.870+0000] {{pool_runner.py:75}} INFO - Created thread pool with 20 workers
+[2024-05-27T11:03:07.870+0000] {{load.py:465}} INFO - Running file loading
+[2024-05-27T11:03:07.870+0000] {{load.py:468}} INFO - Found 1 load packages
+[2024-05-27T11:03:07.870+0000] {{load.py:474}} INFO - Loading schema from load package in 1716807727.0005622
+[2024-05-27T11:03:07.908+0000] {{load.py:476}} INFO - Loaded schema name dayforce and version 2
+[2024-05-27T11:03:07.944+0000] {{utils.py:133}} INFO - Client for duckdb will start initialize storage
+[2024-05-27T11:03:07.949+0000] {{utils.py:138}} INFO - Client for duckdb will update schema to package schema
+[2024-05-27T11:03:07.967+0000] {{job_client_impl.py:191}} INFO - Schema with hash sb57l+QRFs8/YcIJvSUUEnwFwTZY/gecdDMwrRk0xkA= not found in the storage. upgrading
+[2024-05-27T11:03:07.982+0000] {{job_client_impl.py:496}} INFO - Found 16 updates for employees__can_federal_taxes__items in dayforce
+[2024-05-27T11:03:07.988+0000] {{job_client_impl.py:496}} INFO - Found 7 updates for employees__clock_device_groups__items in dayforce
+[2024-05-27T11:03:07.994+0000] {{job_client_impl.py:496}} INFO - Found 44 updates for employees in dayforce
+[2024-05-27T11:03:08.001+0000] {{job_client_impl.py:496}} INFO - Found 8 updates for employees__marital_statuses__items in dayforce
+[2024-05-27T11:03:08.007+0000] {{job_client_impl.py:496}} INFO - Found 68 updates for employees__employment_statuses__items in dayforce
+[2024-05-27T11:03:08.013+0000] {{job_client_impl.py:496}} INFO - Found 11 updates for employees__emergency_contacts__items in dayforce
+[2024-05-27T11:03:08.019+0000] {{job_client_impl.py:496}} INFO - Found 13 updates for employees__employee_work_assignment_managers__items in dayforce
+[2024-05-27T11:03:08.025+0000] {{job_client_impl.py:496}} INFO - Found 21 updates for employees__can_state_taxes__items in dayforce
+[2024-05-27T11:03:08.031+0000] {{job_client_impl.py:496}} INFO - Found 6 updates for employees__us_tax_statuses__items in dayforce
+[2024-05-27T11:03:08.037+0000] {{job_client_impl.py:496}} INFO - Found 5 updates for _dlt_loads in dayforce
+[2024-05-27T11:03:08.043+0000] {{job_client_impl.py:496}} INFO - Found 73 updates for employees__work_assignments__items in dayforce
+[2024-05-27T11:03:08.050+0000] {{job_client_impl.py:496}} INFO - Found 15 updates for employees__employee_properties__items in dayforce
+[2024-05-27T11:03:08.056+0000] {{job_client_impl.py:496}} INFO - Found 27 updates for employees__emergency_contacts__items__addresses__items in dayforce
+[2024-05-27T11:03:08.062+0000] {{job_client_impl.py:496}} INFO - Found 25 updates for employees__us_state_taxes__items in dayforce
+[2024-05-27T11:03:08.068+0000] {{job_client_impl.py:496}} INFO - Found 7 updates for employees__employee_pay_adjust_code_groups__items in dayforce
+[2024-05-27T11:03:08.074+0000] {{job_client_impl.py:496}} INFO - Found 10 updates for employees__employee_managers__items in dayforce
+[2024-05-27T11:03:08.080+0000] {{job_client_impl.py:496}} INFO - Found 4 updates for employees__health_wellness_details__items in dayforce
+[2024-05-27T11:03:08.086+0000] {{job_client_impl.py:496}} INFO - Found 21 updates for employees__us_federal_taxes__items in dayforce
+[2024-05-27T11:03:08.092+0000] {{job_client_impl.py:496}} INFO - Found 9 updates for employees__ei_rates__items in dayforce
+[2024-05-27T11:03:08.098+0000] {{job_client_impl.py:496}} INFO - Found 6 updates for employees__can_tax_statuses__items in dayforce
+[2024-05-27T11:03:08.104+0000] {{job_client_impl.py:496}} INFO - Found 42 updates for employees__compensation_summary__items in dayforce
+[2024-05-27T11:03:08.111+0000] {{job_client_impl.py:496}} INFO - Found 6 updates for _dlt_version in dayforce
+[2024-05-27T11:03:08.117+0000] {{job_client_impl.py:496}} INFO - Found 26 updates for employees__emergency_contacts__items__contacts__items in dayforce
+[2024-05-27T11:03:08.122+0000] {{job_client_impl.py:496}} INFO - Found 25 updates for employees__contacts__items in dayforce
+[2024-05-27T11:03:08.128+0000] {{job_client_impl.py:496}} INFO - Found 21 updates for employees__direct_deposits__items in dayforce
+[2024-05-27T11:03:08.135+0000] {{job_client_impl.py:496}} INFO - Found 36 updates for employees__org_unit_infos__items in dayforce
+[2024-05-27T11:03:08.141+0000] {{job_client_impl.py:496}} INFO - Found 27 updates for employees__addresses__items in dayforce
+[2024-05-27T11:03:08.147+0000] {{job_client_impl.py:496}} INFO - Found 8 updates for _dlt_pipeline_state in dayforce
+[2024-05-27T11:03:08.153+0000] {{job_client_impl.py:496}} INFO - Found 10 updates for employees__roles__items in dayforce
+[2024-05-27T11:03:08.162+0000] {{utils.py:145}} INFO - Client for duckdb will truncate tables
+[2024-05-27T11:03:08.192+0000] {{load.py:215}} INFO - Found 0 that are already started and should be continued
+[2024-05-27T11:03:08.200+0000] {{load.py:199}} INFO - Will load 20, creating jobs
+[2024-05-27T11:03:08.210+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__can_tax_statuses__items.fde94107b5.0.insert_values with table name employees__can_tax_statuses__items
+[2024-05-27T11:03:08.211+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__work_assignments__items.4d3c3e315c.0.insert_values with table name employees__work_assignments__items
+[2024-05-27T11:03:08.211+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__contacts__items.b4d57b3fa4.0.insert_values with table name employees__contacts__items
+[2024-05-27T11:03:08.211+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees.433b702913.0.insert_values with table name employees
+[2024-05-27T11:03:08.212+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__org_unit_infos__items.d031d1691e.0.insert_values with table name employees__org_unit_infos__items
+[2024-05-27T11:03:08.213+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__can_state_taxes__items.f52a6640e5.0.insert_values with table name employees__can_state_taxes__items
+[2024-05-27T11:03:08.214+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__compensation_summary__items.255f0a308f.0.insert_values with table name employees__compensation_summary__items
+[2024-05-27T11:03:08.215+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__emergency_contacts__items__addresses__items.208c904a30.0.insert_values with table name employees__emergency_contacts__items__addresses__items
+[2024-05-27T11:03:08.218+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__us_state_taxes__items.cbb92124a2.0.insert_values with table name employees__us_state_taxes__items
+[2024-05-27T11:03:08.222+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__emergency_contacts__items.bdcd68c5be.0.insert_values with table name employees__emergency_contacts__items
+[2024-05-27T11:03:08.223+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__org_unit_infos__items.c55778100f.0.insert_values with table name employees__org_unit_infos__items
+[2024-05-27T11:03:08.224+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__us_tax_statuses__items.957bf57687.0.insert_values with table name employees__us_tax_statuses__items
+[2024-05-27T11:03:08.226+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__employee_managers__items.55114b0e05.0.insert_values with table name employees__employee_managers__items
+[2024-05-27T11:03:08.227+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__employment_statuses__items.c7c172f227.0.insert_values with table name employees__employment_statuses__items
+[2024-05-27T11:03:08.228+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__direct_deposits__items.ff032b4a96.0.insert_values with table name employees__direct_deposits__items
+[2024-05-27T11:03:08.228+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__health_wellness_details__items.64fe47d727.0.insert_values with table name employees__health_wellness_details__items
+[2024-05-27T11:03:08.230+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__marital_statuses__items.7d6e959ea2.0.insert_values with table name employees__marital_statuses__items
+[2024-05-27T11:03:08.233+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__ei_rates__items.25468e038a.0.insert_values with table name employees__ei_rates__items
+[2024-05-27T11:03:08.234+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__employee_work_assignment_managers__items.a4d8ba6ddc.0.insert_values with table name employees__employee_work_assignment_managers__items
+[2024-05-27T11:03:08.235+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__emergency_contacts__items__contacts__items.d006595765.0.insert_values with table name employees__emergency_contacts__items__contacts__items
+[2024-05-27T11:03:10.012+0000] {{load.py:293}} INFO - Will complete 20 for 1716807727.0005622
+[2024-05-27T11:03:10.056+0000] {{load.py:329}} INFO - Job for employees.433b702913.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.101+0000] {{load.py:329}} INFO - Job for employees__work_assignments__items.4d3c3e315c.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.144+0000] {{load.py:329}} INFO - Job for employees__org_unit_infos__items.d031d1691e.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.188+0000] {{load.py:329}} INFO - Job for employees__can_tax_statuses__items.fde94107b5.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.230+0000] {{load.py:329}} INFO - Job for employees__contacts__items.b4d57b3fa4.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.273+0000] {{load.py:329}} INFO - Job for employees__compensation_summary__items.255f0a308f.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.316+0000] {{load.py:329}} INFO - Job for employees__can_state_taxes__items.f52a6640e5.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.359+0000] {{load.py:329}} INFO - Job for employees__us_state_taxes__items.cbb92124a2.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.403+0000] {{load.py:329}} INFO - Job for employees__emergency_contacts__items.bdcd68c5be.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.449+0000] {{load.py:329}} INFO - Job for employees__emergency_contacts__items__addresses__items.208c904a30.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.498+0000] {{load.py:329}} INFO - Job for employees__employment_statuses__items.c7c172f227.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.543+0000] {{load.py:329}} INFO - Job for employees__employee_managers__items.55114b0e05.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.588+0000] {{load.py:329}} INFO - Job for employees__org_unit_infos__items.c55778100f.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.632+0000] {{load.py:329}} INFO - Job for employees__employee_work_assignment_managers__items.a4d8ba6ddc.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.674+0000] {{load.py:329}} INFO - Job for employees__marital_statuses__items.7d6e959ea2.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.721+0000] {{load.py:329}} INFO - Job for employees__emergency_contacts__items__contacts__items.d006595765.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.765+0000] {{load.py:329}} INFO - Job for employees__us_tax_statuses__items.957bf57687.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.809+0000] {{load.py:329}} INFO - Job for employees__health_wellness_details__items.64fe47d727.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.852+0000] {{load.py:329}} INFO - Job for employees__ei_rates__items.25468e038a.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.896+0000] {{load.py:329}} INFO - Job for employees__direct_deposits__items.ff032b4a96.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:10.938+0000] {{collector.py:231}} INFO - --------------------- Load dayforce in 1716807727.0005622 ----------------------
+Jobs: 20/29 (69.0%) | Time: 0.93s | Rate: 21.59/s
+Memory usage: 744.65 MB (19.10%) | CPU usage: 0.00%
+[2024-05-27T11:03:11.040+0000] {{load.py:465}} INFO - Running file loading
+[2024-05-27T11:03:11.040+0000] {{load.py:468}} INFO - Found 1 load packages
+[2024-05-27T11:03:11.040+0000] {{load.py:474}} INFO - Loading schema from load package in 1716807727.0005622
+[2024-05-27T11:03:11.089+0000] {{load.py:476}} INFO - Loaded schema name dayforce and version 2
+[2024-05-27T11:03:11.096+0000] {{load.py:215}} INFO - Found 0 that are already started and should be continued
+[2024-05-27T11:03:11.097+0000] {{load.py:199}} INFO - Will load 9, creating jobs
+[2024-05-27T11:03:11.110+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__employee_pay_adjust_code_groups__items.3068e2c086.0.insert_values with table name employees__employee_pay_adjust_code_groups__items
+[2024-05-27T11:03:11.110+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__roles__items.0f74f97eb7.0.insert_values with table name employees__roles__items
+[2024-05-27T11:03:11.110+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__clock_device_groups__items.ab1222efa0.0.insert_values with table name employees__clock_device_groups__items
+[2024-05-27T11:03:11.110+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/_dlt_pipeline_state.c783dbf3d8.0.insert_values with table name _dlt_pipeline_state
+[2024-05-27T11:03:11.110+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__org_unit_infos__items.b975a2c8ba.0.insert_values with table name employees__org_unit_infos__items
+[2024-05-27T11:03:11.110+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__addresses__items.0d88fab474.0.insert_values with table name employees__addresses__items
+[2024-05-27T11:03:11.110+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__can_federal_taxes__items.51ba05833f.0.insert_values with table name employees__can_federal_taxes__items
+[2024-05-27T11:03:11.112+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__employee_properties__items.c1cc1ad9d1.0.insert_values with table name employees__employee_properties__items
+[2024-05-27T11:03:11.113+0000] {{load.py:151}} INFO - Will load file 1716807727.0005622/new_jobs/employees__us_federal_taxes__items.848fd3a2a7.0.insert_values with table name employees__us_federal_taxes__items
+[2024-05-27T11:03:11.593+0000] {{load.py:293}} INFO - Will complete 9 for 1716807727.0005622
+[2024-05-27T11:03:11.636+0000] {{load.py:329}} INFO - Job for employees__clock_device_groups__items.ab1222efa0.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:11.681+0000] {{load.py:329}} INFO - Job for employees__roles__items.0f74f97eb7.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:11.729+0000] {{load.py:329}} INFO - Job for employees__can_federal_taxes__items.51ba05833f.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:11.776+0000] {{load.py:329}} INFO - Job for employees__addresses__items.0d88fab474.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:11.819+0000] {{load.py:329}} INFO - Job for employees__employee_pay_adjust_code_groups__items.3068e2c086.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:11.863+0000] {{load.py:329}} INFO - Job for _dlt_pipeline_state.c783dbf3d8.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:11.906+0000] {{load.py:329}} INFO - Job for employees__org_unit_infos__items.b975a2c8ba.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:11.950+0000] {{load.py:329}} INFO - Job for employees__employee_properties__items.c1cc1ad9d1.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:11.993+0000] {{load.py:329}} INFO - Job for employees__us_federal_taxes__items.848fd3a2a7.insert_values completed in load 1716807727.0005622
+[2024-05-27T11:03:12.036+0000] {{collector.py:231}} INFO - --------------------- Load dayforce in 1716807727.0005622 ----------------------
+Jobs: 29/29 (100.0%) | Time: 0.44s | Rate: 65.48/s
+Memory usage: 850.14 MB (19.80%) | CPU usage: 0.00%
+[2024-05-27T11:03:12.141+0000] {{load.py:465}} INFO - Running file loading
+[2024-05-27T11:03:12.141+0000] {{load.py:468}} INFO - Found 1 load packages
+[2024-05-27T11:03:12.141+0000] {{load.py:474}} INFO - Loading schema from load package in 1716807727.0005622
+[2024-05-27T11:03:12.190+0000] {{load.py:476}} INFO - Loaded schema name dayforce and version 2
+[2024-05-27T11:03:12.196+0000] {{load.py:215}} INFO - Found 0 that are already started and should be continued
+[2024-05-27T11:03:12.197+0000] {{load.py:197}} INFO - No new jobs found in 1716807727.0005622
+[2024-05-27T11:03:12.256+0000] {{load.py:357}} INFO - All jobs completed, archiving package 1716807727.0005622 with aborted set to False
+[2024-05-27T11:03:12.257+0000] {{collector.py:231}} INFO - --------------------- Load dayforce in 1716807727.0005622 ----------------------
+Memory usage: 850.14 MB (19.80%) | CPU usage: 0.00%
+[2024-05-27T11:03:12.257+0000] {{pool_runner.py:101}} INFO - Closing processing pool
+[2024-05-27T11:03:12.264+0000] {{pool_runner.py:104}} INFO - Processing pool closed
+[2024-05-27T11:03:12.266+0000] {{airflow_helper.py:315}} INFO - Pipeline pipeline_name load step completed in 4.35 seconds
+1 load package(s) were loaded to destination duckdb and into dataset dataset_name
+The duckdb destination used duckdb:////usr/local/***/pipeline_name.duckdb location to store data
+Load package 1716807727.0005622 is LOADED and contains no failed jobs
+[2024-05-27T11:03:12.266+0000] {{airflow_helper.py:337}} INFO - Removing folder /tmp/dlt_c1e491eb86031f6a/pipelines/pipeline_name
+[2024-05-27T11:03:12.267+0000] {{python.py:201}} INFO - Done. Returned value was: None
+[2024-05-27T11:03:12.274+0000] {{taskinstance.py:1138}} INFO - Marking task as SUCCESS. dag_id=dayforce_pipeline_dag, task_id=pipeline_name.dayforce_employees, execution_date=20240527T110203, start_date=20240527T110206, end_date=20240527T110312
+[2024-05-27T11:03:12.312+0000] {{local_task_job_runner.py:234}} INFO - Task exited with return code 0
